@@ -23,6 +23,8 @@ var playGame = function () {
   // Retrieve the computer's choice based on the random index
   const computerChoice = options[computerChoiceIndex];
 
+  window.alert("The computer chose " + computerChoice + "!");
+
   if (userChoice === computerChoice) {
     window.alert("It's a tie!");
     ties++; // Increment ties count
@@ -32,11 +34,13 @@ var playGame = function () {
     (userChoice === "S" && computerChoice === "R")
   ) {
     window.alert("Computer wins! You lose...");
-    losses++; // Increment losses count
+    losses++; // Increment losses countp
   } else {
     console.log("You win! Computer loses...");
     wins++; // Increment wins count
   }
+
+  window.alert("Wins: " + wins + " Losses: " + losses + " Ties: " + ties);
 };
 
 // Call the playGame function to start the game
