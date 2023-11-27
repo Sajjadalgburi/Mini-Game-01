@@ -9,3 +9,19 @@ const computerChoiceIndex = Math.floor(Math.random() * options.length);
 
 // Retrieve the computer's choice based on the random index
 const computerChoice = options[computerChoiceIndex];
+
+// Check if it's a tie
+if (userChoice === computerChoice) {
+  console.log("It's a tie!");
+} else {
+  // Check the game outcomes
+  if (
+    (userChoice === "R" && computerChoice === "P") ||
+    (userChoice === "P" && computerChoice === "S") ||
+    (userChoice === "S" && computerChoice === "R")
+  ) {
+    alert("Computer wins! You lose...");
+  } else {
+    alert("You win! Computer loses...");
+  }
+}
