@@ -6,6 +6,10 @@ For this project, I drew inspiration from the mini-game module that is a part of
 
 While this project lacks any HTML markup or CSS styling, my main focus has been on the Javascript aspect. Furthermore, I hope that in the upcoming future, I will be able to make this game much more fun and interactive!
 
+## Web URL
+
+https://sajjadalgburi.github.io/Mini-Game-01/
+
 ## Installation
 
 Steps:
