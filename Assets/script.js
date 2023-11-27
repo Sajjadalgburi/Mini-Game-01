@@ -49,6 +49,11 @@ var playGame = function () {
 
   // Display the current score
   window.alert("Wins: " + wins + " Losses: " + losses + " Ties: " + ties);
+
+  // Ask the user if they want to play again and recursively call playGame if confirmed
+  if (window.confirm("Play again?")) {
+    playGame();
+  }
 };
 
 // Call the playGame function to start the game
